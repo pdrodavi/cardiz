@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GUMA - Gestão de Convidados | ARSOAU</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #4CAF50;
+            --secondary-color: #89c440;
+        }
+        
+        nav {
+            background-color: var(--primary-color);
+        }
+        
+        .hero {
+            background-color: #f5f5f5;
+            padding: 4rem 0;
+            background-image: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)), url('/api/placeholder/1920/1080');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .features {
+            padding: 4rem 0;
+        }
+        
+        .feature-card {
+            padding: 2rem;
+            text-align: center;
+            height: 100%;
+            transition: transform 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .feature-icon {
+            font-size: 3rem;
+            color: var(--secondary-color);
+            margin-bottom: 1rem;
+        }
+        
+        .btn-large {
+            background-color: var(--secondary-color);
+            margin: 1rem 0;
+        }
+        
+        .btn-large:hover {
+            background-color: var(--primary-color);
+        }
+        
+        footer {
+            background-color: var(--primary-color);
+            padding: 2rem 0;
+            color: white;
+        }
+
+        .testimonial {
+            font-style: italic;
+            padding: 2rem;
+            background: #fff;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-wrapper container">
+            <img src="https://anagrazielly.guma.arsoau.com.br/images/arsoau.svg" alt="ARSOAU Logo" class="brand-logo">
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="#features">Funcionalidades</a></li>
+                <li><a href="#benefits">Vantagens</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m6">
+                    <h1>GUMA</h1>
+                    <h4>Gestão Inteligente de Convidados</h4>
+                    <p class="flow-text">Organize seus eventos com excelência. Gerencie convidados, confirmações e check-in de forma simples e eficiente.</p>
+                    <a href="#contact" class="btn-large waves-effect waves-light">Agende uma Demo</a>
+                </div>
+                <div class="col s12 m6">
+                    <img src="/api/placeholder/500/300" alt="GUMA Dashboard" class="responsive-img z-depth-2">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="center-align">Funcionalidades Principais</h2>
+            <div class="row">
+                <div class="col s12 m4">
+                    <div class="feature-card">
+                        <i class="fas fa-user-check feature-icon"></i>
+                        <h5>Check-in Digital</h5>
+                        <p>Sistema rápido de check-in com QR Code e confirmação automática de presença.</p>
+                    </div>
+                </div>
+                <div class="col s12 m4">
+                    <div class="feature-card">
+                        <i class="fas fa-envelope-open-text feature-icon"></i>
+                        <h5>Convites Digitais</h5>
+                        <p>Envio automatizado de convites personalizados e controle de confirmações.</p>
+                    </div>
+                </div>
+                <div class="col s12 m4">
+                    <div class="feature-card">
+                        <i class="fas fa-chart-pie feature-icon"></i>
+                        <h5>Relatórios em Tempo Real</h5>
+                        <p>Acompanhe estatísticas de confirmações e presenças em tempo real.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 m4">
+                    <div class="feature-card">
+                        <i class="fas fa-qrcode feature-icon"></i>
+                        <h5>QR Code Individual</h5>
+                        <p>Cada convidado recebe um QR Code único para fácil identificação no evento.</p>
+                    </div>
+                </div>
+                <div class="col s12 m4">
+                    <div class="feature-card">
+                        <i class="fas fa-mobile-alt feature-icon"></i>
+                        <h5>App Mobile</h5>
+                        <p>Aplicativo para gestão do evento e check-in via smartphone.</p>
+                    </div>
+                </div>
+                <div class="col s12 m4">
+                    <div class="feature-card">
+                        <i class="fas fa-table feature-icon"></i>
+                        <h5>Mapa de Mesas</h5>
+                        <p>Organize a distribuição dos convidados com mapa de mesas interativo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="benefits" class="grey lighten-4">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 center-align">
+                    <h2>Vantagens do GUMA</h2>
+                    <div class="row">
+                        <div class="col s12 m3">
+                            <h5><i class="fas fa-clock green-text"></i></h5>
+                            <h5>Economia de Tempo</h5>
+                            <p>Automatize processos manuais e ganhe eficiência</p>
+                        </div>
+                        <div class="col s12 m3">
+                            <h5><i class="fas fa-chart-line green-text"></i></h5>
+                            <h5>Maior Controle</h5>
+                            <p>Gestão completa de convidados e presença</p>
+                        </div>
+                        <div class="col s12 m3">
+                            <h5><i class="fas fa-paper-plane green-text"></i></h5>
+                            <h5>Comunicação Eficiente</h5>
+                            <p>Envio automatizado de convites e lembretes</p>
+                        </div>
+                        <div class="col s12 m3">
+                            <h5><i class="fas fa-shield-alt green-text"></i></h5>
+                            <h5>Segurança</h5>
+                            <p>Controle de acesso e dados protegidos</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container" style="padding: 4rem 0;">
+        <div class="row">
+            <div class="col s12">
+                <h2 class="center-align">Depoimentos</h2>
+                <div class="row">
+                    <div class="col s12 m6">
+                        <div class="testimonial">
+                            "O GUMA revolucionou a organização dos nossos eventos. O check-in ficou muito mais rápido e o controle de presença é perfeito!"
+                            <p class="right-align"><strong>- Cerimonial Eventos Especiais</strong></p>
+                        </div>
+                    </div>
+                    <div class="col s12 m6">
+                        <div class="testimonial">
+                            "Excelente sistema! Facilitou muito o controle de confirmações e a comunicação com os convidados."
+                            <p class="right-align"><strong>- Buffet Celebration</strong></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="container">
+        <div class="row">
+            <div class="col s12 center-align">
+                <h2>Entre em Contato</h2>
+                <p class="flow-text">Descubra como o GUMA pode tornar seu evento um sucesso</p>
+                <a href="mailto:contato@arsoau.com.br" class="btn-large waves-effect waves-light">Solicitar Demonstração</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col s12 center-align">
+                    <p>&copy; 2024 ARSOAU - Todos os direitos reservados</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>
